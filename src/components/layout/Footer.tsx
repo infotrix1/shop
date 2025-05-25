@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <h4 className="text-white font-semibold">Free Shipping</h4>
-                <p className="text-sm">On orders over $500</p>
+                <p className="text-sm">On orders over ₦500</p>
               </div>
             </div>
             
