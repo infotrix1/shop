@@ -72,9 +72,9 @@ const ContactPage: React.FC = () => {
                     <p className="mt-1 text-gray-600">
                       1234 Business Avenue
                       <br />
-                      New York, NY 10001
+                      205 bakori kubwa, Pw
                       <br />
-                      United States
+                      Nigeria
                     </p>
                   </div>
                 </div>
