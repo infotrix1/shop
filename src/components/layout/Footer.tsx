@@ -51,8 +51,8 @@ export const Footer: React.FC = () => {
             <p className="mb-4">Your one-stop shop for wholesale business supplies and equipment at competitive prices.</p>
             <address className="not-italic mb-6">
               <p>1234 Business Avenue</p>
-              <p>New York, NY 10001</p>
-              <p className="mt-2">Phone: (123) 456-7890</p>
+              <p>205 bakori road</p>PW
+              <p className="mt-2">Phone: (+234) 456-7890</p>
               <p>Email: info@wholesale.com</p>
             </address>
             <div className="flex space-x-4">
