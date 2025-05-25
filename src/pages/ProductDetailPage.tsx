@@ -116,11 +116,11 @@ const ProductDetailPage: React.FC = () => {
                 <div className="flex items-baseline">
                   {product.discountPrice && (
                     <span className="text-gray-500 line-through text-lg mr-2">
-                      ${product.price.toFixed(2)}
+                      ₦{product.price.toFixed(2)}
                     </span>
                   )}
                   <span className="text-3xl font-bold text-gray-900">
-                    ${(product.discountPrice || product.price).toFixed(2)}
+                    ₦{(product.discountPrice || product.price).toFixed(2)}
                   </span>
                 </div>
                 
@@ -173,7 +173,7 @@ const ProductDetailPage: React.FC = () => {
               <div className="mt-8 space-y-4">
                 <div className="flex items-center text-gray-600">
                   <Truck className="w-5 h-5 mr-3" />
-                  <span>Free shipping on orders over $500</span>
+                  <span>Free shipping on orders over ₦500</span>
                 </div>
                 <div className="flex items-center text-gray-600">
                   <Shield className="w-5 h-5 mr-3" />
@@ -252,11 +252,11 @@ const ProductDetailPage: React.FC = () => {
             <div className="flex items-baseline">
               {product.discountPrice && (
                 <span className="text-gray-500 line-through text-sm mr-2">
-                  ${product.price.toFixed(2)}
+                  ₦{product.price.toFixed(2)}
                 </span>
               )}
               <span className="text-2xl font-bold text-gray-900">
-                ${(product.discountPrice || product.price).toFixed(2)}
+                ₦{(product.discountPrice || product.price).toFixed(2)}
               </span>
             </div>
             
@@ -341,7 +341,7 @@ const ProductDetailPage: React.FC = () => {
         <div className="mt-2 p-4 bg-white space-y-4">
           <div className="flex items-center text-gray-600">
             <Truck className="w-5 h-5 mr-3" />
-            <span className="text-sm">Free shipping on orders over $500</span>
+            <span className="text-sm">Free shipping on orders over ₦500</span>
           </div>
           <div className="flex items-center text-gray-600">
             <Shield className="w-5 h-5 mr-3" />
