@@ -77,9 +77,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, layout = 'gri
               <div>
                 <div className="flex items-center">
                   {hasDiscount && (
-                    <span className="text-gray-500 line-through mr-2">${price.toFixed(2)}</span>
+                    <span className="text-gray-500 line-through mr-2">₦{price.toFixed(2)}</span>
                   )}
-                  <span className="text-xl font-semibold text-gray-900">${displayPrice.toFixed(2)}</span>
+                  <span className="text-xl font-semibold text-gray-900">₦{displayPrice.toFixed(2)}</span>
                 </div>
                 
                 <div className="text-sm text-gray-600 mt-1">
@@ -151,9 +151,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, layout = 'gri
         <div className="flex items-center justify-between mb-3">
           <div>
             {hasDiscount && (
-              <span className="text-gray-500 text-sm line-through mr-1">${price.toFixed(2)}</span>
+              <span className="text-gray-500 text-sm line-through mr-1">₦{price.toFixed(2)}</span>
             )}
-            <span className="text-base sm:text-lg font-semibold text-gray-900">${displayPrice.toFixed(2)}</span>
+            <span className="text-base sm:text-lg font-semibold text-gray-900">₦{displayPrice.toFixed(2)}</span>
           </div>
           
           <div className="text-xs text-gray-600">

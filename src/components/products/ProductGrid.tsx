@@ -99,19 +99,19 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ products, title }) => 
                 <div className="space-y-1">
                   <label className="flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <span>Under $100</span>
+                    <span>Under ₦100</span>
                   </label>
                   <label className="flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <span>$100 - $500</span>
+                    <span>₦100 - ₦500</span>
                   </label>
                   <label className="flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <span>$500 - $1000</span>
+                    <span>₦500 - ₦1000</span>
                   </label>
                   <label className="flex items-center">
                     <input type="checkbox" className="mr-2" />
-                    <span>Over $1000</span>
+                    <span>Over ₦1000</span>
                   </label>
                 </div>
               </div>
@@ -144,19 +144,19 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ products, title }) => 
               <div className="space-y-1">
                 <label className="flex items-center">
                   <input type="checkbox" className="mr-2" />
-                  <span>Under $100</span>
+                  <span>Under ₦100</span>
                 </label>
                 <label className="flex items-center">
                   <input type="checkbox" className="mr-2" />
-                  <span>$100 - $500</span>
+                  <span>₦100 - ₦500</span>
                 </label>
                 <label className="flex items-center">
                   <input type="checkbox" className="mr-2" />
-                  <span>$500 - $1000</span>
+                  <span>₦500 - ₦1000</span>
                 </label>
                 <label className="flex items-center">
                   <input type="checkbox" className="mr-2" />
-                  <span>Over $1000</span>
+                  <span>Over ₦1000</span>
                 </label>
               </div>
             </div>

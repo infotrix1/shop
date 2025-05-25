@@ -82,9 +82,9 @@ const CartPage: React.FC = () => {
                     {/* Price */}
                     <div className="w-full md:w-1/5 text-center md:px-4 mb-4 md:mb-0">
                       <span className="md:hidden inline-block text-gray-500 mr-1">Price:</span>
-                      <span className="font-medium">${itemPrice.toFixed(2)}</span>
+                      <span className="font-medium">₦{itemPrice.toFixed(2)}</span>
                       {product.discountPrice && (
-                        <span className="block text-sm text-gray-500 line-through">${product.price.toFixed(2)}</span>
+                        <span className="block text-sm text-gray-500 line-through">₦{product.price.toFixed(2)}</span>
                       )}
                     </div>
                     
@@ -115,7 +115,7 @@ const CartPage: React.FC = () => {
                     <div className="w-full md:w-1/5 flex items-center justify-between md:justify-center px-2 md:px-4">
                       <div>
                         <span className="md:hidden inline-block text-gray-500 mr-1">Total:</span>
-                        <span className="font-semibold">${itemTotal.toFixed(2)}</span>
+                        <span className="font-semibold">₦{itemTotal.toFixed(2)}</span>
                       </div>
                       <button
                         onClick={() => removeFromCart(product.id)}
@@ -156,21 +156,21 @@ const CartPage: React.FC = () => {
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-gray-600">
                   <span>Subtotal ({cart.totalItems} items)</span>
-                  <span>${totalPrice.toFixed(2)}</span>
+                  <span>₦{totalPrice.toFixed(2)}</span>
                 </div>
                 <div className="flex justify-between text-gray-600">
                   <span>Shipping</span>
-                  <span>{shippingCost === 0 ? 'Free' : `$${shippingCost.toFixed(2)}`}</span>
+                  <span>{shippingCost === 0 ? 'Free' : `₦${shippingCost.toFixed(2)}`}</span>
                 </div>
                 <div className="flex justify-between text-gray-600">
                   <span>Tax (8%)</span>
-                  <span>${taxAmount.toFixed(2)}</span>
+                  <span>₦{taxAmount.toFixed(2)}</span>
                 </div>
                 
                 <div className="border-t border-gray-200 pt-3 mt-3">
                   <div className="flex justify-between font-semibold text-gray-900">
                     <span>Order Total</span>
-                    <span>${orderTotal.toFixed(2)}</span>
+                    <span>₦{orderTotal.toFixed(2)}</span>
                   </div>
                 </div>
               </div>
@@ -207,8 +207,8 @@ const CartPage: React.FC = () => {
               <div className="flex items-start">
                 <ShoppingCart size={20} className="text-blue-600 mt-0.5 mr-3 flex-shrink-0" />
                 <div>
-                  <p className="text-blue-800 text-sm font-medium">Free shipping on orders over $500</p>
-                  <p className="text-blue-600 text-xs mt-1">Add ${Math.max(0, 500 - totalPrice).toFixed(2)} more to qualify for free shipping.</p>
+                  <p className="text-blue-800 text-sm font-medium">Free shipping on orders over ₦500</p>
+                  <p className="text-blue-600 text-xs mt-1">Add ₦{Math.max(0, 500 - totalPrice).toFixed(2)} more to qualify for free shipping.</p>
                 </div>
               </div>
             </div>
